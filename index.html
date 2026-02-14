@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walentynka dla Magdy</title>
+    <meta
+      name="description"
+      content="Romantyczna walentynka online dla Magdy z animacją serc i wyjątkową wiadomością."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="proposal-screen" class="screen visible" aria-labelledby="proposal-title">
+        <div class="glow"></div>
+        <article class="card">
+          <p class="badge">💌 Tylko dla Ciebie, Magdo 💌</p>
+          <h1 id="proposal-title">Czy zostaniesz moją Walentynką? 💖✨</h1>
+          <p class="intro">
+            Każdy dzień z Tobą jest najpiękniejszą historią. Chciałbym, żeby ten moment był
+            wyjątkowy tak jak Ty.
+          </p>
+
+          <div class="buttons" role="group" aria-label="Wybór odpowiedzi">
+            <button id="yes-btn" class="btn btn-yes" type="button">Tak 💘</button>
+            <button id="no-btn" class="btn btn-no" type="button">Nie 🙈</button>
+          </div>
+          <p id="no-message" class="no-message" aria-live="polite"></p>
+        </article>
+      </section>
+
+      <section id="celebration-screen" class="screen" aria-labelledby="celebration-title">
+        <canvas id="heart-canvas" aria-hidden="true"></canvas>
+        <div class="celebration-content">
+          <h2 id="celebration-title">Dziękuję, Skarbie! ❤️</h2>
+          <p class="subtitle">Spójrz jak serca układają się tylko dla Ciebie…</p>
+          <div id="final-heart" class="final-heart" aria-hidden="true">
+            <div class="heart-shape">
+              <p>
+                Kocham Cię bardzo,<br />
+                jesteś najlepszą dziewczyną.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
